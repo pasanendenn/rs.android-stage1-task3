@@ -31,8 +31,10 @@ class FullBinaryTrees {
         }
 
 
-        return if (N<5){
+        return if (N in 2..4){
             "[]"
+        } else if (N==1){
+            "[[0]]"
         } else {
             memo[N].toString()
         }
